@@ -52,9 +52,17 @@
     - root view가 로드된 이후 windows의 뷰 계층에서 **제거된 직 후** 메소드
 - 이미지 설명
 
-<img src="https://user-images.githubusercontent.com/84652513/154609964-6a13ac22-290d-40ef-8646-d5433b0b6ba4.png  width="200" height="400"/>
+<img src="https://user-images.githubusercontent.com/84652513/154609964-6a13ac22-290d-40ef-8646-d5433b0b6ba4.png  width="300" height="300">
 
 
+
+```
+<img src="YOUR URL" width="YOUR_WIDTH" height="YOUR_HEIGHT">
+
+<< Example >>
+<img src="images/Simpson.png", width="1000">
+<img src="https://i.pinimg.com/originals/20/78/a9/2078a921387fb535735b19820175bacf.jpg" width="500">
+```
 
 ###  4. 고민과 해결
 
