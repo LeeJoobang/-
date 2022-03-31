@@ -17,6 +17,9 @@ git add . // 점을 사용하면 전체 파일이 올라간다.
 
 
 ```
+
+```
+
 Last login: Fri Mar 18 23:33:55 on console
 [oh-my-zsh] Would you like to update? [Y/n] y
 Updating Oh My Zsh
@@ -176,10 +179,10 @@ warning: '.Trash/' 디렉터리를 열 수 없습니다: Operation not permitted
 커밋할 사항을 추가하지 않았지만 추적하지 않는 파일이 있습니다 (추적하려면 "git
 add"를 사용하십시오)
  joobanglee  ~   master
-❯ pwd
+++++++++++++++++++++++++++++++++++++++++++++++++++++❯ pwd
 /Users/joobanglee
  joobanglee  ~   master
-❯ rm -rf .git
++++++++++++++++++++++++++++++++++++++++++++++++++++++❯ rm -rf .git
  joobanglee  ~
 ❯ ls
 Applications       Downloads          Movies             Public
@@ -208,7 +211,7 @@ Documents          Masters_Cocoa_2021 Pictures           fonts
 현재 브랜치 develop
 커밋할 사항 없음, 작업 폴더 깨끗함
  ✘ joobanglee  ~/Desktop/01_LeeJoobang/002_0 코드스쿼드/002_2코드스쿼드 마스터즈/0002 iOS 클래스/PhotoAlbumApp/PhotoAlbumApp   develop
-❯ touch helloworld
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++❯ touch helloworld
  joobanglee  ~/Desktop/01_LeeJoobang/002_0 코드스쿼드/002_2코드스쿼드 마스터즈/0002 iOS 클래스/PhotoAlbumApp/PhotoAlbumApp   develop
 ❯ ld
 xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
@@ -255,7 +258,7 @@ add"를 사용하십시오)
 ❯ git push
 fatal: 현재 브랜치 develop에 업스트림 브랜치가 없습니다.
 현재 브랜치를 푸시하고 해당 리모트를 업스트림으로 지정하려면
-다음과 같이 하십시오.
+다음과 같이 하십시오
 
     git push --set-upstream origin develop
 
@@ -407,7 +410,6 @@ To https://github.com/LeeJoobang/swift-photos-10.git
 ❯ git log
  joobanglee  ~/Desktop/01_LeeJoobang/002_0 코드스쿼드/002_2코드스쿼드 마스터즈/0002 iOS 클래스/PhotoAlbumApp/PhotoAlbumApp   develop
 ❯
-```
 
 cmd + k : 리셋
 
@@ -419,9 +421,11 @@ git reset --soft // 커밋을 하기 이전 상태로 되돌리는 것
 
 --> 
 
-cd .. 한번 뒤로가기
+cd .. 한번 뒤로가기g
 
 
+
+git reset --hard HEAD~ 한칸 뒤롷
 
 git checkout -b test: test라는 브랜치를 생성
 
@@ -753,4 +757,10 @@ Fast-forward
  joobanglee  ~/Desktop/01_LeeJoobang/002_0 코드스쿼드/002_2코드스쿼드 마스터즈/0002 iOS 클래스/PhotoAlbumApp   test
 ❯
 ```
+
+github - '.' 버튼 
+
+그냥 pull을 할 경우 fetch & merge 
+
+git pull --rebase upstream develop
 
